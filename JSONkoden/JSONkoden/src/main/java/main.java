@@ -1,4 +1,6 @@
 import processing.core.*;
+import processing.data.JSONArray;
+import processing.data.JSONObject;
 import processing.data.Table;
 import processing.data.TableRow;
 
@@ -6,7 +8,7 @@ public class main  extends PApplet {
     public static void main(String[] args) { PApplet.main("main"); }
     float angle;
 
-    Table table;
+    JSONObject satelite;
     float r = 200;
 
     PImage earth;
@@ -20,8 +22,7 @@ public class main  extends PApplet {
     @Override
     public void setup() {
         earth = loadImage("earth.jpg");
-        // table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.csv", "header");
-        table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv", "header");
+        satelite = loadJSONObject("https://www.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/2/&apiKey=3FTC98-HTA69Q-PUZEY9-4KGU");
 
         noStroke();
         globe = createShape(SPHERE, r);
@@ -34,15 +35,15 @@ public class main  extends PApplet {
 
        translate((float) (width*0.5), (float)(height*0.5));
         rotateY(angle);
-        angle += 0.05;
+        angle += 0.0069;
 
         lights();
         fill(200);
         noStroke();
         //sphere(r);
         shape(globe);
-
-        for (TableRow row : table.rows()) {
+/*
+        for (TableRow row : satelite.size()) {
             float lat = row.getFloat("latitude");
             float lon = row.getFloat("longitude");
             float mag = row.getFloat("mag");
@@ -83,6 +84,8 @@ public class main  extends PApplet {
             box(h, 5, 5);
             popMatrix();
         }
+
+ */
     }
 
 
