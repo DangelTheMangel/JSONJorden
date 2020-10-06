@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/JSONJorden.iml" filepath="$PROJECT_DIR$/.idea/JSONJorden.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSONkoden/JSONkoden/JSONkoden.iml" filepath="$PROJECT_DIR$/JSONkoden/JSONkoden/JSONkoden.iml" />
+    </modules>
+  </component>
+</project>

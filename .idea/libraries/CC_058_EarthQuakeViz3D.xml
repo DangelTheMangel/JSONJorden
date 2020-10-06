@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="CC_058_EarthQuakeViz3D">
+    <CLASSES>
+      <root url="jar://E:/lib/CC_058_EarthQuakeViz3D.jar!/" />
+      <root url="jar://E:/lib/core.jar!/" />
+      <root url="jar://E:/lib/gluegen-rt-natives-windows-amd64.jar!/" />
+      <root url="jar://E:/lib/gluegen-rt.jar!/" />
+      <root url="jar://E:/lib/jogl-all-natives-windows-amd64.jar!/" />
+      <root url="jar://E:/lib/jogl-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
